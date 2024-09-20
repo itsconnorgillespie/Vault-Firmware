@@ -7,6 +7,11 @@ Outside maintaining the integrity of a chocolate bar, I have found the Vault app
 
 This application was created in under one week. With this in mind, there is no guarantee that the following application is secure or bug-free. If you encounter a bug in the application, feel free to submit an Issue and I will attempt to fix it as soon as possible. Thanks for understanding.
 
+### RPi Pico W & Micropython
+
+This firmware is designed using Micropython specifically for use with the Raspberry Pi (RPi) Pico W development board. The RPi Pico W can be purchased [here](https://www.microcenter.com/product/650108/raspberry-pi-pico-w) on Microcenter's website. To install Micropython on the RPi Pico W, a detailed guide can be found [here](https://www.raspberrypi.com/documentation/microcontrollers/micropython.html) on Raspberry Pi's website. 
+
+
 ### Sensors
 
 To collect the temperature and humidity of the environment, a DTH22 sensor is used. I purchased the sensors from [here](https://www.amazon.com/HiLetgo-Temperature-Humidity-Electronic-Practice/dp/B0795F19W6/ref=asc_df_B0795F19W6/?tag=hyprod-20&linkCode=df0&hvadid=692875362841&hvpos=&hvnetw=g&hvrand=13977344509611099852&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9029977&hvtargid=pla-2281435180298&mcid=84e36b67ede23d50a31d5fc6eed59ac6&hvocijid=13977344509611099852-B0795F19W6-&hvexpln=73&th=1) on Amazon. It should be noted that although the accuracy is much greater on the DTH22, a DTH11 can also be used, but this will require some edits in the `main.py` file to work properly. The pin I chose to use was GPIO 22, but this pin can be configured differently in the `settings.py` file. 
