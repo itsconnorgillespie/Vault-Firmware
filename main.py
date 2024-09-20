@@ -6,7 +6,7 @@ import settings
 import gc
 
 
-sensor = dht.DHT22(machine.Pin(settings.DHT22_PIN))
+sensor = dht.DHT22(machine.Pin(settings.DHT22_PIN))  # Change "DTH22" -> "DTH11" if using DTH11 sensor.
 led = machine.Pin("LED", machine.Pin.OUT)
 wlan = None
 gc.enable()
